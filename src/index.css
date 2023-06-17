@@ -3,3 +3,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer components {
+    .boxShadow {
+        box-shadow: 0px 6px theme('backgroundColor.malibu.200');
+    }
+  }

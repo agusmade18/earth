@@ -15,7 +15,13 @@ import Constructions from "../user/pages/Constructions";
 import QaPage from "../user/pages/QaPage";
 import Contact from "../user/pages/Contact";
 
-import New from "../user/new-template";
+import Company from "../user/new-template/menus/Company";
+import ActualIntro from "../user/new-template/menus/ActualIntro";
+import Inquiry from "../user/new-template/menus/Inquiry";
+import QA from "../user/new-template/menus/QA";
+import RecruitmenInfo from "../user/new-template/menus/RecruitmenInfo";
+import RecruitmentPartner from "../user/new-template/menus/RecruitmentPartner";
+import Service from "../user/new-template/menus/Service";
 
 function PublicRoutes() {
   return (
@@ -90,14 +96,28 @@ function PublicRoutes() {
 
       {/* ---------------------------------------------- */}
 
-      <Route path="/" exact element={<Dashboard />} />
+      {/* <Route path="/" exact element={<Dashboard />} />
       <Route path="/dashboard" exact element={<Dashboard />} />
       <Route path="/constructions" exact element={<Constructions />} />
       <Route path="/qa" exact element={<QaPage />} />
-      <Route path="/contact" exact element={<Contact />} />
+      <Route path="/contact" exact element={<Contact />} /> */}
 
       {/* ---------------------------------------------- */}
-      <Route path="/new" exact element={<New />} />
+      <Route path="/" exact element={<Company />} />
+      <Route path="/service" exact element={<Service />} />
+      <Route path="/actual-introduction" exact element={<ActualIntro />} />
+      <Route
+        path="/recruitment-information"
+        exact
+        element={<RecruitmenInfo />}
+      />
+      <Route
+        path="/recruitment-partner"
+        exact
+        element={<RecruitmentPartner />}
+      />
+      <Route path="/QA" exact element={<QA />} />
+      <Route path="/inquiry" exact element={<Inquiry />} />
     </Routes>
   );
 }
