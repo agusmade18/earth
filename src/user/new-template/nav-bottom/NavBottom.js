@@ -11,7 +11,6 @@ function NavBottom({ navClick }) {
   const navBottoms = [
     {
       name: "サービス",
-      link: "/",
       icon: <FaList />,
       onClick: navClick,
       // navClick: navClick,
@@ -25,6 +24,7 @@ function NavBottom({ navClick }) {
       name: "会社員",
       link: "/",
       icon: <FaBuilding />,
+      active: true,
     },
     {
       name: "問い合わせ",
@@ -43,16 +43,16 @@ function NavBottom({ navClick }) {
         <ul className="grid grid-cols-5 w-full overflow-auto whitespace-nowrap">
           {navBottoms.map((nav, i) => (
             <li key={i} className="text-malibu-50 text-sm">
-              <button
-                // href=""
+              <a
+                href={nav.link}
                 onClick={() => {
                   nav.onClick();
                 }}
-                className="text-center flex flex-col justify-center items-center w-full"
+                className={`text-center flex flex-col justify-center items-center w-full`}
               >
                 <span className="text-lg pb-2">{nav.icon}</span>
                 <p>{nav.name}</p>
-              </button>
+              </a>
             </li>
           ))}
         </ul>

@@ -2,11 +2,12 @@ import React, { useState } from "react";
 import Header from "./header/Header";
 import NavBottom from "./nav-bottom/NavBottom";
 import Navbar from "./navbar/Navbar";
+import NavShadow from "./navbar/NavShadow";
 
 const Main = ({ children }) => {
   const [showNav, setShowNav] = useState(false);
   const navClick = () => {
-    setShowNav(true);
+    setShowNav(!showNav);
   };
 
   const closeNav = () => {
@@ -14,10 +15,20 @@ const Main = ({ children }) => {
   };
   return (
     <div className="w-full h-screen relative top-0 left-0">
+      <div
+        className={`fixed w-full h-screen z-40 ${showNav ? "block" : "hidden"}`}
+      >
+        <NavShadow closeNav={closeNav} />
+      </div>
       <Header />
       <div className="relative top-[5.5rem] left-0">{children}</div>
-      {showNav && <Navbar closeNav={closeNav} />}
-
+      <div
+        className={`md:opacity-0 fixed top-0 left-0 w-[70%] h-screen z-50 transform duration-700 ${
+          showNav ? "translate-x-0" : "-translate-x-96"
+        }`}
+      >
+        <Navbar closeNav={closeNav} showNav={showNav} />
+      </div>
       <div className="md:hidden block">
         <NavBottom navClick={navClick} />
       </div>

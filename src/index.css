@@ -9,4 +9,18 @@
     .boxShadow {
         box-shadow: 0px 6px theme('backgroundColor.malibu.200');
     }
+
+    .activeLink, .hover, .focus {
+        color: theme("textColor.malibu.400");
+        background-color: theme("backgroundColor.malibu.50");
+        padding: 8px 0 8px 8px;
+        margin: 0 0.5rem 0 0.5rem;
+        width: 100%;
+    }
+    /* .activeNavBottom {
+        color: theme("textColor.malibu.400");
+        background-color: theme("backgroundColor.malibu.50");
+        border-radius: 5px;
+        padding: 4px 0;
+    } */
   }

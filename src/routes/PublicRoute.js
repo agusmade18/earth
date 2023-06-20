@@ -103,7 +103,7 @@ function PublicRoutes() {
       <Route path="/contact" exact element={<Contact />} /> */}
 
       {/* ---------------------------------------------- */}
-      <Route path="/" exact element={<Company />} />
+      <Route path="/home" exact element={<Company />} />
       <Route path="/service" exact element={<Service />} />
       <Route path="/actual-introduction" exact element={<ActualIntro />} />
       <Route
