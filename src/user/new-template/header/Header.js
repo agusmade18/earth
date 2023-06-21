@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import logo from "../../../assets/images/logo.png";
 import "./style.css";
 import { Menus } from "../menus/MenuLists";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 function Header() {
   const menus = Menus;
@@ -10,7 +12,12 @@ function Header() {
       <header className="fixed top-0 left-0 w-full h-[80px] z-30">
         <div className="bg-white p-3 w-full h-full boxShadow flex justify-between items-center">
           <div className="md:px-3 px-5 py-10 w-full flex justify-center items-center md:w-fit">
-            <img src={logo} className="w-[15rem]" />
+            <LazyLoadImage
+              src={logo}
+              effect="blur"
+              alt="Logo"
+              className="w-[15rem]"
+            />
           </div>
 
           <nav className="hidden opacity-0 md:flex md:opacity-100 justify-center items-center">

@@ -22,7 +22,7 @@ import QA from "../user/new-template/menus/QA";
 import RecruitmenInfo from "../user/new-template/menus/RecruitmenInfo";
 import RecruitmentPartner from "../user/new-template/menus/RecruitmentPartner";
 import Service from "../user/new-template/menus/Service";
-import Home from "../user/new-template/menus/Home";
+import Home from "../user/new-template/menus/Home/Main";
 
 function PublicRoutes() {
   return (

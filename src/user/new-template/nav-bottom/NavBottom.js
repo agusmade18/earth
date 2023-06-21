@@ -38,7 +38,7 @@ function NavBottom({ navClick }) {
     },
   ];
   return (
-    <div className="fixed bottom-0 left-0 w-full h-16 bg-malibu-400">
+    <div className="fixed bottom-0 left-0 w-full h-16 bg-malibu-400 z-50">
       <div className="flex justify-between w-full h-full items-center">
         <ul className="grid grid-cols-5 w-full overflow-auto whitespace-nowrap">
           {navBottoms.map((nav, i) => (
