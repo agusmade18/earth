@@ -22,6 +22,7 @@ import QA from "../user/new-template/menus/QA";
 import RecruitmenInfo from "../user/new-template/menus/RecruitmenInfo";
 import RecruitmentPartner from "../user/new-template/menus/RecruitmentPartner";
 import Service from "../user/new-template/menus/Service";
+import Home from "../user/new-template/menus/Home";
 
 function PublicRoutes() {
   return (
@@ -103,7 +104,8 @@ function PublicRoutes() {
       <Route path="/contact" exact element={<Contact />} /> */}
 
       {/* ---------------------------------------------- */}
-      <Route path="/home" exact element={<Company />} />
+      <Route path="/" exact element={<Home />} />
+      <Route path="/company" exact element={<Company />} />
       <Route path="/service" exact element={<Service />} />
       <Route path="/actual-introduction" exact element={<ActualIntro />} />
       <Route

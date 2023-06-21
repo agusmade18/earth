@@ -24,7 +24,7 @@ const Main = ({ children }) => {
       <div className="relative top-[5.5rem] left-0">{children}</div>
       <div
         className={`md:opacity-0 fixed top-0 left-0 w-[70%] h-screen z-50 transform duration-700 ${
-          showNav ? "translate-x-0" : "-translate-x-96"
+          showNav ? "translate-x-0" : "-translate-x-[100rem]"
         }`}
       >
         <Navbar closeNav={closeNav} showNav={showNav} />

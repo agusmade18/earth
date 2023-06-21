@@ -22,6 +22,7 @@ function Navbar({ closeNav }) {
         <div className="font-bold pl-3 w-full mr-5 flex flex-col">
           {menus.map((menu, i) => (
             <NavLink
+              key={i}
               to={menu.link}
               className={({ isActive }) =>
                 isActive
