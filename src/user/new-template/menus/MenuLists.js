@@ -2,7 +2,7 @@ import { MdHomeFilled, MdPermIdentity, MdOtherHouses } from "react-icons/md";
 const Menus = [
   {
     name: "ホーム",
-    link: "/",
+    link: "/home",
     icon: <MdHomeFilled />,
   },
   {

@@ -105,6 +105,7 @@ function PublicRoutes() {
 
       {/* ---------------------------------------------- */}
       <Route path="/" exact element={<Home />} />
+      <Route path="/home" exact element={<Home />} />
       <Route path="/company" exact element={<Company />} />
       <Route path="/service" exact element={<Service />} />
       <Route path="/actual-introduction" exact element={<ActualIntro />} />
