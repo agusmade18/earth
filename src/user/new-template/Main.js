@@ -21,7 +21,9 @@ const Main = ({ children }) => {
         <NavShadow closeNav={closeNav} />
       </div>
       <Header />
-      <div className="relative top-[5.5rem] left-0">{children}</div>
+      <div className="relative top-[5.1rem] left-0 w-full p-0 m-0">
+        {children}
+      </div>
       <div
         className={`md:opacity-0 fixed top-0 left-0 w-[70%] h-screen z-50 transform duration-700 ${
           showNav ? "translate-x-0" : "-translate-x-[100rem]"

@@ -20,7 +20,7 @@ function SlidePage() {
   };
   return (
     <>
-      <div className="relative top-[15rem] md:top-[16rem] w-full h-fit overflow-hidden pb-10">
+      <div className="relative top-0 left-0 w-full h-full overflow-hidden pb-10">
         <div className="w-full h-full flex flex-col justify-center items-center wow animate__animated animate__zoomIn">
           <div className="bg-malibu-950 w-1/2 mb-2 rounded-full h-1"></div>
           <p className="text-2xl md:text-4xl font-extrabold">NEW サービス</p>
