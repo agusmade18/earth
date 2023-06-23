@@ -6,6 +6,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        Montserrat: ["Montserrat", "sans-serif"],
+      },
       colors: {
         "dark-purple": "#081A51",
         "light-white": "rgba(255,255,255,0.18)",

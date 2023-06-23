@@ -3,6 +3,7 @@ import Header from "./header/Header";
 import NavBottom from "./nav-bottom/NavBottom";
 import Navbar from "./navbar/Navbar";
 import NavShadow from "./navbar/NavShadow";
+import Footer from "./footer/Footer";
 
 const Main = ({ children }) => {
   const [showNav, setShowNav] = useState(false);
@@ -23,6 +24,9 @@ const Main = ({ children }) => {
       <Header />
       <div className="relative top-[5.1rem] left-0 w-full p-0 m-0">
         {children}
+      </div>
+      <div className="relative top-0 md:top-[5rem] left-0 hidden md:block">
+        <Footer />
       </div>
       <div
         className={`md:opacity-0 fixed top-0 left-0 w-[70%] h-screen z-50 transform duration-700 ${

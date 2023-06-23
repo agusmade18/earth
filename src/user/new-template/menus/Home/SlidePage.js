@@ -7,6 +7,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import WOW from "wowjs";
 import "animate.css";
+import { GrServices } from "react-icons/gr";
 
 function SlidePage() {
   const settings = {
@@ -20,17 +21,22 @@ function SlidePage() {
   };
   return (
     <>
-      <div className="relative top-0 left-0 w-full h-full overflow-hidden pb-10">
+      <div className="relative top-0 left-0 w-full h-full overflow-hidden">
         <div className="w-full h-full flex flex-col justify-center items-center wow animate__animated animate__zoomIn">
           <div className="bg-malibu-950 w-1/2 mb-2 rounded-full h-1"></div>
-          <p className="text-2xl md:text-4xl font-extrabold">NEW サービス</p>
+          <div className="flex justify-center items-center space-x-3">
+            <span className="text-4xl">
+              <GrServices />{" "}
+            </span>
+            <p className="text-2xl md:text-4xl font-extrabold font-Montserrat tracking-widest">
+              NEW サービス
+            </p>
+          </div>
           <div className="bg-malibu-950 w-1/2 mt-2 rounded-full h-1"></div>
         </div>
         <div className="wow animate__animated animate__zoomIn mt-3">
-          <Slider {...settings}>
-            <LazyLoadImage src={car1} className="w-full" />
-            <LazyLoadImage src={car2} className="w-full" />
-          </Slider>
+          <LazyLoadImage src={car1} className="w-full" />
+          <LazyLoadImage src={car2} className="w-full mt-2" />
         </div>
       </div>
     </>
