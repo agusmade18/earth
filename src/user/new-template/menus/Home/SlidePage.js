@@ -21,7 +21,7 @@ function SlidePage() {
   };
   return (
     <>
-      <div className="relative top-0 left-0 w-full h-full overflow-hidden">
+      <div className="relative top-0 left-0 w-full h-full">
         <div className="w-full h-full flex flex-col justify-center items-center wow animate__animated animate__zoomIn">
           <div className="bg-malibu-950 w-1/2 mb-2 rounded-full h-1"></div>
           <div className="flex justify-center items-center space-x-3">

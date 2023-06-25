@@ -28,7 +28,7 @@ function Inquiry() {
           <LazyLoadImage key={i} src={img} effect="blur" className="w-full" />
         ))}
       </div>
-      <div className="w-[95%] mx-auto h-fit border border-malibu-100 rounded-xl mt-5 flex flex-col bg-malibu-700 p-3 justify-center items-center">
+      <div className="w-[95%] md:w-[50%] mx-auto h-fit border border-malibu-100 rounded-xl mt-5 flex flex-col bg-malibu-700 p-3 justify-center items-center">
         <p className="text-lg md:text-xl text-malibu-50 font-extrabold text-center">
           お気軽にお問い合わせください。いいな　みなおし
         </p>

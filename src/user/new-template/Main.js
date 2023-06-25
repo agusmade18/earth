@@ -22,7 +22,7 @@ const Main = ({ children }) => {
         <NavShadow closeNav={closeNav} />
       </div>
       <Header />
-      <div className="relative top-[5.1rem] left-0 w-full p-0 m-0">
+      <div className="relative top-[5.1rem] left-0 w-full h-full m-0 p-0">
         {children}
       </div>
       <div className="relative top-0 md:top-[5rem] left-0 hidden md:block">

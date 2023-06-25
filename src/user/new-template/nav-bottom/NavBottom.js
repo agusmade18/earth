@@ -28,12 +28,12 @@ function NavBottom({ navClick }) {
     },
     {
       name: "問い合わせ",
-      link: "/",
+      link: "/inquiry",
       icon: <FaEnvelope />,
     },
     {
       name: "TEL",
-      link: "/",
+      link: "tel:0120173704",
       icon: <FaPhoneVolume />,
     },
   ];
