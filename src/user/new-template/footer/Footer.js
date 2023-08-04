@@ -9,7 +9,7 @@ function Footer() {
       <div className="bg-malibu-900 w-[90%] h-[0.1rem] mt-2 mx-auto"></div>
       <p className=" text-[10px] text-center mt-2 italic">
         Powered by{" "}
-        <a href="mailto: rubyruck@gmail.com" target="_blank">
+        <a href="https://agusmade.vercel.app/" target="_blank">
           AM
         </a>{" "}
         with{" "}
